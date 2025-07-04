@@ -4,8 +4,7 @@ const projectData = [
     description: "A personal portfolio built with React and Tailwind.",
     image: "/src/assets/Me.png", 
     live: "https://yourportfolio.netlify.app",
-    github: "https://github.com/Dev-Rakib-is",
-    delay: 0,
+    github: "https://github.com/Dev-Rakib-is/Portfolio",
   },
   {
     title: "E-commerce UI",
@@ -13,7 +12,6 @@ const projectData = [
     image: "/src/assets/project2.png",
     live: "https://yourshop.vercel.app",
     github: "https://github.com/yourusername/ecommerce-ui",
-    delay: 100,
   },
   {
     title: "Blog Website",
@@ -21,7 +19,6 @@ const projectData = [
     image: "/src/assets/project3.png",
     live: "https://yourblog.vercel.app",
     github: "https://github.com/yourusername/blog-react",
-    delay: 200,
   },
 ];
 

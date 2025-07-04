@@ -1,4 +1,4 @@
-import counterData from "../../data/CounterData";
+import counterData from "../../data/counterData";
 import CounterCard from "./CounterCard";
 
 const Counter = () => {

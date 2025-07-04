@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "react-slick"; // ✅ Import this!
+import Slider from "react-slick"; 
 import testimonials from "../../data/testimonialsData";
 
 const Testimonials = () => {
@@ -11,7 +11,7 @@ const Testimonials = () => {
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
   };
 
   return (
@@ -21,12 +21,12 @@ const Testimonials = () => {
         <p className="text-gray-600">What People Say</p>
       </div>
 
-      <div className="max-w-3xl mx-auto px-4">
+      <div className="max-w-3xl mx-auto px-4 ">
         <Slider {...settings}>
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-lg text-left"
+              className="  p-6 rounded-xl bg-white text-left "
               data-aos="zoom-in"
               data-aos-delay="200"
               data-aos-duration="1200"
