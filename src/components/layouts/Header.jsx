@@ -1,5 +1,6 @@
 import { AlignJustify , X } from "lucide-react";
 import { useState } from "react";
+import logo from "../../assets/R-logo.svg"
 
 const Header = () => {
   const [menuOpen, setmenuOpen] = useState(false);
@@ -12,28 +13,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 bg-blue-50 w-full shadow z-50">
       <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 py-6.5">
         <a href="/">
-          <div className="text-violet-800 text-base font-semibold flex items-center gap-1">
-            <svg
-              width="38"
-              height="38"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="24" cy="24" r="24" fill="#5E3BEE" />
-              <text
-                x="50%"
-                y="50%"
-                textAnchor="middle"
-                dy=".35em"
-                fontSize="24"
-                fontFamily="Arial, sans-serif"
-                fill="white"
-                fontWeight="bold"
-              >
-                R
-              </text>
-            </svg>
+          <div className="text-blue-800 text-base font-semibold flex items-center gap-1">
+           <img src={logo} alt="Portostar" className="w-8 h-8"/>
             PORTOSTAR
           </div>
         </a>
@@ -41,7 +22,7 @@ const Header = () => {
         <ul className="hidden md:flex gap-[47px] font-normal text-black">
           <li>
             <a
-              href="#hero"
+              href="/"
               className="text-sm font-normal hover:text-blue-500 transition duration-300 tracking-[1.5px]"
             >
               HOME
@@ -49,7 +30,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#hero"
+              href="#about"
               className="text-sm font-normal hover:text-blue-500 transition duration-300 tracking-[1.5px]"
             >
               ABOUT US
@@ -57,7 +38,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#hero"
+              href="#services"
               className="text-sm font-normal hover:text-blue-500 transition duration-300 tracking-[1.5px]"
             >
               SERVICES
@@ -65,10 +46,18 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#hero"
+              href="#projects"
               className="text-sm font-normal hover:text-blue-500 transition duration-300 tracking-[1.5px]"
             >
               WORKS
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="text-sm font-normal hover:text-blue-500 transition duration-300 tracking-[1.5px]"
+            >
+              CONTACT
             </a>
           </li>
         </ul>
@@ -90,7 +79,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="/"
+                href="#about"
                 className="block py-2 px-3 rounded hover:bg-amber-400/40 transition"
               >
                 ABOUT US
@@ -98,7 +87,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="/"
+                href="#services"
                 className="block py-2 px-3 rounded hover:bg-amber-400/40 transition"
               >
                 SERVICES
@@ -106,17 +95,25 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="/"
+                href="#projects"
                 className="block py-2 px-3 rounded hover:bg-amber-400/40 transition"
               >
                 WORKS
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="block py-2 px-3 rounded hover:bg-amber-400/40 transition"
+              >
+                Contact
               </a>
             </li>
           </ul>
         )}
 
         {/* Desktop hire Button  */}
-        <a href="#contact" className="hidden w-[124px] h-[40px] rounded-full border border-violet-800 hover:border-0 text-blue-500 text-sm font-medium cursor-pointer hover:scale-105 transition duration-400 hover:bg-blue-200 md:flex justify-center items-center">
+        <a href="#contact" className="hidden w-[124px] h-[40px] rounded-full bg-white border-blue-800 hover:border-0 text-blue-500 text-sm font-medium cursor-pointer hover:scale-105 transition duration-400 shadow-2xl hover:bg-blue-300 hover:text-blue-500 md:flex justify-center items-center">
           HIRE ME
         </a>
       </nav>

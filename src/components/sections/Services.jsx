@@ -1,5 +1,3 @@
-// src/components/sections/Services.jsx
-import React from "react";
 import { FaPaintBrush, FaCode, FaMobileAlt } from "react-icons/fa";
 import ServiceCard from "./ServiceCard";
 
@@ -8,19 +6,25 @@ const Services = () => {
     {
       icon: <FaPaintBrush />,
       title: "Web Design",
-      description: "Creative and modern design with user-friendly experience.",
+      description: "Creative and modern design.",
+      details:
+        "I create stunning UI/UX experiences using Figma, Adobe XD and frontend best practices.",
       delay: 0,
     },
     {
       icon: <FaCode />,
       title: "Web Development",
-      description: "Building responsive and scalable websites using latest tech.",
+      description: "Clean and scalable websites.",
+      details:
+        "Using React, Tailwind, and modern JavaScript, I build lightning-fast and maintainable apps.",
       delay: 100,
     },
     {
       icon: <FaMobileAlt />,
       title: "Responsive Design",
-      description: "Ensuring your site looks perfect on every device.",
+      description: "Mobile-first design for all devices.",
+      details:
+        "Your website will look perfect on phones, tablets, and desktops — with pixel perfection.",
       delay: 200,
     },
   ];
@@ -30,11 +34,20 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 text-center mb-12">
         <h2
           className="text-4xl font-bold text-blue-900 mb-2"
-          data-aos="fade-up"
+          data-aos="zoom-in"
+          data-aos-daley="200"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
         >
           My Services
         </h2>
-        <p className="text-gray-600" data-aos="fade-up" data-aos-delay="100">
+        <p
+          className="text-gray-600"
+          data-aos="zoom-in"
+          data-aos-daley="200"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+        >
           What I Provide
         </p>
       </div>
@@ -46,6 +59,7 @@ const Services = () => {
             icon={item.icon}
             title={item.title}
             description={item.description}
+            details={item.details}
             delay={item.delay}
           />
         ))}

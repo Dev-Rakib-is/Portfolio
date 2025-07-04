@@ -1,4 +1,3 @@
-import React from "react";
 import counterData from "../../data/CounterData";
 import CounterCard from "./CounterCard";
 
@@ -7,13 +6,19 @@ const Counter = () => {
     <section className="py-20 bg-blue-900" id="stats">
       <div
         className="max-w-7xl mx-auto px-4"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        data-aos="zoom-in"
+          data-aos-daley="200"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {counterData.map((item, index) => (
-            <CounterCard key={index} number={item.number} label={item.label} />
+            <CounterCard
+              key={index}
+              number={item.number}
+              label={item.label}
+              delay={item.delay}      
+            />
           ))}
         </div>
       </div>
