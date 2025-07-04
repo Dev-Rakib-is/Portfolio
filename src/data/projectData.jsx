@@ -3,7 +3,7 @@ const projectData = [
     title: "Portfolio Website",
     description: "A personal portfolio built with React and Tailwind.",
     image: "/src/assets/Me.png", 
-    live: "https://yourportfolio.netlify.app",
+    live: "https://portfolio-vgt5.vercel.app",
     github: "https://github.com/Dev-Rakib-is/Portfolio",
   },
   {

@@ -1,6 +1,6 @@
 import CountUp from "react-countup";
 
-const CounterCard = ({ number, label, delay }) => {
+const CounterCard = ({ number, label }) => {
   return (
     <div
       className="bg-white rounded-lg shadow text-center p-6"

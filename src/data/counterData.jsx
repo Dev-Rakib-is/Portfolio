@@ -1,4 +1,3 @@
-
 const counterData = [
   {
     number: 100,
