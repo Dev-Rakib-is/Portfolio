@@ -13,6 +13,8 @@ import Contact from "./components/sections/Contact";
 import Footer from "./components/layouts/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import BackToTop from "./components/layouts/BackToTop";
+import SimpleSlider from "./components/sections/SimpleSlider";
 
 
 
@@ -27,10 +29,12 @@ function App() {
       <Banner/>
       <Counter />
       <Services/>
+      <SimpleSlider/>
       <About/>
       <Project/>
       <Testimonials/>
       <Contact/>
+      <BackToTop/>
       <Footer/>
     </>
   );

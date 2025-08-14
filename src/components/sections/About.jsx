@@ -1,3 +1,4 @@
+import me from "../../assets/Me.png"
 const About = () => {
   return (
     <section className="py-20 bg-white" id="about">
@@ -12,8 +13,8 @@ const About = () => {
           data-aos-easing="ease-in-out"
         >
           <img
-            src="/src/assets/Me.png"
-            alt="About Me"
+            src={me}
+            alt="My Image"
             className="rounded-lg shadow-lg max-w-[400px] mx-auto "
           />
         </div>

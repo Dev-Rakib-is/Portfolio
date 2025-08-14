@@ -4,7 +4,7 @@ import myImage from "../../assets/Me.png";
 const Banner = () => {
   return (
     <section
-      className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-blue-900 to-sky-800 text-white"
+      className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-purple-900 to-sky-800 text-white"
       id="banner"
     >
       <div className="max-w-7xl w-full grid md:grid-cols-2 gap-10 items-center">

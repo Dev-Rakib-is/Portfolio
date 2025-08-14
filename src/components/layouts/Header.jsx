@@ -2,6 +2,7 @@ import { AlignJustify, X } from "lucide-react";
 import { useState } from "react";
 import Scrollspy from "react-scrollspy";
 import logo from "../../assets/R-logo.svg";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [menuOpen, setmenuOpen] = useState(false);
@@ -70,30 +71,63 @@ const Header = () => {
           </li>
         </Scrollspy>
 
-        {/* Mobile menu toggle button */}
+        {/* Mobile menu  */}
         <div className="sm:hidden">
-          <button onClick={toggleMenu} className="w-[38px] h-[38px]">
+          <motion.button
+            whileTap={{ scale: 0.9 }}
+            onClick={toggleMenu}
+            className="w-[38px] h-[38px]"
+          >
             {menuOpen ? <X /> : <AlignJustify />}
-          </button>
+          </motion.button>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <ul className="flex flex-col absolute bg-amber-300 bg-opacity-20 backdrop-blur-md font-medium space-y-4 top-[100%] p-5 rounded-lg left-1/2 transform -translate-x-1/2 w-11/12 max-w-xs text-base sm:text-lg shadow-lg border border-white/20">
             <li>
-              <a href="#home" className="block py-2 px-3 rounded hover:bg-amber-400/40 transition">Home</a>
+              <a
+              onClick={()=>setmenuOpen(false)}
+                href="#home"
+                className="block py-2 px-3 rounded hover:bg-amber-400/40 transition"
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="#about" className="block py-2 px-3 rounded hover:bg-amber-400/40 transition">ABOUT US</a>
+              <a
+               onClick={()=>setmenuOpen(false)}
+                href="#about"
+                className="block py-2 px-3 rounded hover:bg-amber-400/40 transition"
+              >
+                ABOUT US
+              </a>
             </li>
             <li>
-              <a href="#services" className="block py-2 px-3 rounded hover:bg-amber-400/40 transition">SERVICES</a>
+              <a
+               onClick={()=>setmenuOpen(false)}
+                href="#services"
+                className="block py-2 px-3 rounded hover:bg-amber-400/40 transition"
+              >
+                SERVICES
+              </a>
             </li>
             <li>
-              <a href="#projects" className="block py-2 px-3 rounded hover:bg-amber-400/40 transition">WORKS</a>
+              <a
+               onClick={()=>setmenuOpen(false)}
+                href="#projects"
+                className="block py-2 px-3 rounded hover:bg-amber-400/40 transition"
+              >
+                WORKS
+              </a>
             </li>
             <li>
-              <a href="#contact" className="block py-2 px-3 rounded hover:bg-amber-400/40 transition">Contact</a>
+              <a
+               onClick={()=>setmenuOpen(false)}
+                href="#contact"
+                className="block py-2 px-3 rounded hover:bg-amber-400/40 transition"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         )}

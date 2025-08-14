@@ -3,7 +3,7 @@ import CounterCard from "./CounterCard";
 
 const Counter = () => {
   return (
-    <section className="py-20 bg-blue-900" id="stats">
+    <section className="py-20 bg-black/10" id="stats">
       <div
         className="max-w-7xl mx-auto px-4"
         data-aos="zoom-in"
